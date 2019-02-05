@@ -45,8 +45,7 @@
 
 /* position using math/calc. 
 	calc(100%) - it's the size of the first div(box)
-	we substract 50% of its size
-	we then substract the half size of the second div(box1)
+	we  substract the half size of the second div(box1)
 */
 
 /*.box {
@@ -61,8 +60,8 @@
 	background: pink;
 	width: var(--size-box1);
 	height: var(--size-box1);
-	left: calc(100% - 50% - var(--size-box1) / 2);
-	top: calc(100% - 50% - var(--size-box1) / 2);
+	left: calc(50% - var(--size-box1) / 2);
+	top: calc(50% - var(--size-box1) / 2);
 }*/
 
 
