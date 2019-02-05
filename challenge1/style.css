@@ -1,0 +1,89 @@
+:root {
+	--size-box: 700px;
+	--size-box1: 300px;
+}
+
+/* position using left, top and translate */
+
+/*.box {
+	background: blue;
+	width: var(--size-box);
+	height: var(--size-box);
+	position: relative;
+}
+
+.box1 {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	background: red;
+	width: var(--size-box1);
+	height: var(--size-box1);
+}
+*/
+
+
+/* 	position using Flexbox */
+
+/*.box {
+	background: blue;
+	width: var(--size-box);
+	height: var(--size-box);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box1 {
+	background: red;
+	width: var(--size-box1);
+	height: var(--size-box1);
+
+}
+*/
+
+/* position using math/calc. 
+	calc(100%) - it's the size of the first div(box)
+	we substract 50% of its size
+	we then substract the half size of the second div(box1)
+*/
+
+/*.box {
+	position: relative;
+	background: blue;
+	width: var(--size-box);
+	height: var(--size-box);
+}
+
+.box1 {
+	position: absolute;
+	background: pink;
+	width: var(--size-box1);
+	height: var(--size-box1);
+	left: calc(100% - 50% - var(--size-box1) / 2);
+	top: calc(100% - 50% - var(--size-box1) / 2);
+}*/
+
+
+
+/* position using grid */
+
+.box {
+ 	display: grid;
+ 	grid-template-rows: repeat(3, 1fr);
+ 	grid-template-columns: repeat(3, 1fr);
+	background: blue;
+	width: var(--size-box);
+	height: var(--size-box);
+	align-items: center;
+	justify-items: center;
+}
+
+.box1 {
+	grid-row-start: 2;
+	grid-column-start: 2;
+	background: red;
+	width: var(--size-box1);
+	height: var(--size-box1);
+}
