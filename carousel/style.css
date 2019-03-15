@@ -1,0 +1,29 @@
+.carousel-inner 	.item img {
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+ 	width: 70%;
+ 	max-height: 400px;
+ 	object-fit: cover;
+}
+
+.item p, h1 {
+	background-color: rgba(0,0,0,0.5);
+	padding: 0;
+	margin: 0 auto 0 auto;
+	width: 70%;
+	display: block;
+}
+
+.item p {
+	margin-bottom: 20px;
+}
+
+.item {
+	border-radius: 25px;
+}
+
+body {
+	background-color: red;
+}
