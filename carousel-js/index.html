@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Movies Carousel</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="carousel-container">
+
+		<div onclick="changeMovie(this, event);" class="carousel-container--movie carousel-container--movie__active">
+			<img alt="movie poster" src="./images/image1.jpg">
+
+			<!-- making use of bubble to catch the div when clicking the span element - don't know if it's a good practice -->
+
+			<span onclick="" class="carousel--icon carousel--icon__left"></span>
+			<span onclick="" class="carousel--icon carousel--icon__right"></span>
+
+			<div class="carousel-container--movie-caption">
+		     	<h1> Thor </h1>
+		     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+	 		</div>
+		</div>
+
+		<div onclick="changeMovie(this, event);" class="carousel-container--movie">
+			<img alt="movie poster" src="./images/image2.jpg">
+			<span onclick="" class="carousel--icon carousel--icon__left"></span>
+			<span onclick="" class="carousel--icon carousel--icon__right"></span>
+
+			<div class="carousel-container--movie-caption">
+		     	<h1> Captain America </h1>
+		     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+	 		</div>
+		</div>
+
+		<div onclick="changeMovie(this, event);" class="carousel-container--movie">
+			<img alt="movie poster" src="./images/image3.jpg">
+			<span onclick="" class="carousel--icon carousel--icon__left"></span>
+			<span onclick="" class="carousel--icon carousel--icon__right"></span>
+
+			<div class="carousel-container--movie-caption">
+		     	<h1> Inception </h1>
+		     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+	 		</div>
+		</div>
+
+		<div onclick="changeMovie(this, event);" class="carousel-container--movie">
+			<img alt="movie poster" src="./images/image4.jpg">
+			<span onclick="" class="carousel--icon carousel--icon__left"></span>
+			<span onclick="" class="carousel--icon carousel--icon__right"></span>
+
+			<div class="carousel-container--movie-caption">
+		     	<h1> Oblivion </h1>
+		     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+	 		</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
